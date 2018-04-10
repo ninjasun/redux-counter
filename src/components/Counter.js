@@ -10,30 +10,18 @@ class Counter extends Component {
 
     render(){
         const { value, onIncrement, onDecrement } = this.props;
-        const styles = {
-            container:{
-                display:'flex',
-                width:300
-            },
-            left:{
-                flex:1
-            },
-            right:{
-                flex:1
-            }
-        }
+
         return(
-            <div className='container'>
+            <div >
                 <p>Clicked { value } times</p>
-                <div className='left'>
+                <div >
                     <button
+
                         onClick={onIncrement}
                     >
                         +
                     </button>
-                </div>
 
-                <div className='left'>
                     <button
                         onClick={onDecrement}
                     >
